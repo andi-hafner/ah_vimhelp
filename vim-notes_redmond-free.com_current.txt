@@ -1,0 +1,218 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*                                                                             *
+*  Frequently used Vim commands (ɔ) redmond-free.com 2014 GPLv3               *
+*  Release 2014-10-10_09-43-16                                                *
+*                                                                             *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*                                                                             *
+*  The following notes came into life while I'm getting familiar with Vim. As *
+*  this is an individual and ongoing task, they are neither representative    *
+*  nor complete, it's only the stuff that seems to be important for me to re- *
+*  member respectively to have it handy in need.                              *
+*                                                                             *
+*  The Layout may be is ugly and the topics aren't completely sorted in sec-  *
+*  tions by matter yet. The whole thing is given for your convenience only,   *
+*  so use it as it is if you like. Nevertheless, any corrections, sugges-     *
+*  tions, modifications or extensions are highly appreciated. Please send     *
+*  them to                                                                    *
+*                                                                             *
+*  'admin at kmu-net dot ch' (as 'redmond-free dot com' isn't online yet ;-)  *
+*                                                                             *
+*  as this file isn't published to a public directory yet. Thank you and hap- *
+*  py hacking...                                                              *
+*                                                                             *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+--------------------------- crucial to survive ;-) ----------------------------
+
+ESC                   abort pending operation and switch back to command mode
+                        (which should be where you're living most to take ad-
+                         vantage from the modal concept of Vim)
+:h                    invoking online help
+
+u [CTRL-r]            undo [redo] the last command (so don't be afraid to try
+                        things out, simply press 'u' to revert to the last state)
+
+CTRL-]                jump to a |link| in the vim help file
+
+                      As mentioned at the very beginning of the vim help file:
+                        work through the Vim tutor (invoked by typing 'vimtutor'
+                        at the shell prompt), it interactively teaches you the
+                        very basic stuff without you are completely lost ;-)
+
+                      :! grep -rn 'search string' $VIM/vimcurrent/doc 
+                        Searches all Vim help docs for the given search string
+
+                      If you aren't helped yet:
+                        look for an answer at stackoverflow.com ;-)
+
+----------------------------- Cursor movement ---------------------------------
+
+H [M,L]               set cursor to the top [middle,bottom] of the window
+
+0 [$]                 jump to the begin [end] of the line
+
+gg [G]                go to the top [bottom] of the document
+
+[number]G or gg       go to line [number]
+
+w [b]                 jump to the next [previous] word
+
+e [ge]                jump to the end of the next [previous] word
+
+fx                    jump to letter x (case sensitive, e.g. fK jumps to "Kevin"
+                        in the sentence "let's knock out Kevin" while fk jumps to
+                        "knock" ;-)
+
+; [,]                 jump to the next [previous] letter
+
+zt [zz]               scroll cursor position to the top [center] (strictly speak-
+                        ing here not the cursor is moved rather than the text ly-
+                        ing underneath)
+
+----------------------------- Editing commands --------------------------------
+
+o [O]                 open new line below [above] the cursor position
+
+i [I]                 insert text at cursor position [at start of the line]
+
+a [A]                 append text at cursor position [at the end of the line]
+
+dd                    delete line
+
+c[n]w                 change [n] word[s]
+
+r [R]                 replace character [the following text by what you are ty-
+												ping in]
+
+----------------------------- Search commands ---------------------------------
+
+/|.*|                 search string for the links in the vim help file
+
+/[expression]         look for (regular) [expression]
+
+CTRL-]                jump to a |link|
+
+v                     enter visual mode
+
+y[y]                  yank selected part [current line]
+
+p                     paste selected part (or line, depending on buffer content)
+
+qx                    record sequence to register x (press q again to stop record-
+                        ing, type [n] @x to playback the recorded sequence [n]
+                        times )
+
+:r![command]          reads in the output of the [(shell)command] into the buffer
+
+:e [path/file]        open [file] for editing
+
+:browse e             open file visually by dialog box    
+
+:wq                   write buffer content to file and quit
+
+----------------------------- Window commands ---------------------------------
+
+CTRL-wn               opens a new (blank) window
+
+CTRL-wv               split screen vertically
+
+CTRL-w r              rotates window down
+
+CTRL-W _              Set current window height (default: very high)
+
+CTRL-W =              Make all windows equal height
+
+CTRL-W > [<]          increase [decrease] window with
+
+:set [no]winfixwidth  Fixes the width from the active window, prevents from un-
+                        wanted changes
+
+CTRL-W [n]|             set window width to [n] columns
+
+----------------------------- useful Plugins ----------------------------------
+
+(Plugins can be found at http://www.vim.org/scripts/script_search_results.php)
+
+|WinWalker.txt|       Vim windows navigator/manager (included in newer versions of
+                        Vim, but provides a handy help file extension)
+
+|bufexplorer.txt|     Buffer Explorer       Last Change: 22 Oct 2013
+
+|ConqueTerm|          Plugin to run a shell inside a Vim buffer
+
+|mimicpak.txt|        colorschemes from other Editors/IDEs, plus originals
+
+|showmarks.txt|       Plugin for visually showing the location of marks
+
+|taglist.txt|         Plugin for browsing source code
+
+|NERD_tree.txt|       A tree explorer plugin that owns your momma!
+
+|supertab.txt|        Expands command completion capabilities
+
+|solarized.vim|       A color scheme for Vim version 7.3 or newer.
+                        Modified: 2011 May 05
+
+|unimpaired.txt|      Pairs of handy bracket mappings
+
+----------------------------- Not yet sorted ----------------------------------
+
+:set spell            activate spell check
+
+:set syntax=          (for a list of syntax files type
+                        ':! ls $VIM/vimcurrent/syntax/')
+
+:version              show paths to configuration files (along with version infos
+                        etc .)
+
+:mks[ession ]         creates a "Session.vim" file with window settings etc.
+                        An optional [file] parameter let choose a different file
+                        name, 'gvim -S Session.vim' at the command line reopens
+                        the session
+
+*                     look for further occurrences of the word at cursor position
+
+:registers            show registers (as well as recorded macros)
+
+:buffers              show buffers (i.e. open files)
+
+CTRL-O [I]            jump back [forward]
+
+gg=G                  indenting source file (result may not be satisfying)
+
+:! tidy -mi %         indenting source file with filtering by tidy (result is
+                        probably more satisfying)
+
+:%s/^$\n//g           removes empty lines
+
+:Man [manpage]        Reading manpages in vim 
+                        (requires entry 'runtime! ftplugin/man.vim' in .vimrc)
+
+:helptags {dir}       Generates repectively rebuilds the help tags file(s) for
+                        directory {dir} (usually used for $VIMRUNTIME/doc)
+
+:set [no]list         show [hide] tabstops, line feeds and carriage returns
+                        --> http://superuser.com/questions/97692/vim-show-line-\
+                        feeds-carriage-return
+
+:retab                replace tabs with white spaces (doesn't work always,
+                        better use ':%s/\t/  /g' [replaces the tab character
+												with two spaces])
+                        --> http://stackoverflow.com/questions/426963/replace-\
+												tab-with-spaces-in-vim
+
+CTRL-TAB              Tab indent with supertab plugin activated
+
+SHIFT-CTRL-u 0254     inserting copyleft sign (one has to be in insert mode)
+                        --> https://en.wikipedia.org/wiki/Copyleft#Symbol
+
+r! date +\%F_\%T      insert date / time for versionning purposes
+
+q: [q/]               opens command line [regex search] buffer for editing
+
+~                     switch the case of a letter and advance cursor
+
+''                    jumps between the last and the currently edited line
+
+
