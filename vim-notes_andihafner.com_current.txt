@@ -1,7 +1,7 @@
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *                                                                             *
-*  Frequently used Vim commands (ɔ) andihafner.com 2016 GPLv3               *
-*  Release 2016-06-14_10-10
+*  Frequently used Vim commands (ɔ) andihafner.com 2016 GPLv3                 *
+*  Release 2016-06-14_10-20                                                   *
 *                                                                             *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *                                                                             *
@@ -16,10 +16,8 @@
 *  tions, modifications or extensions are highly appreciated. Please send     *
 *  them to                                                                    *
 *                                                                             *
-*  'admin at kmu-net dot ch' (as 'redmond-free dot com' isn't online yet ;-)  *
+*  'andihafner at andihafner dot com'.                                        *
 *                                                                             *
-*  as this file isn't published to a public directory yet. Thank you and hap- *
-*  py hacking...                                                              *
 *                                                                             *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
