@@ -1,7 +1,7 @@
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *                                                                             *
-*  Frequently used Vim commands (ɔ) redmond-free.com 2014 GPLv3               *
-*  Release 2014-10-10_09-43-16                                                *
+*  Frequently used Vim commands (ɔ) andihafner.com 2016 GPLv3               *
+*  Release 2016-06-14_10-10
 *                                                                             *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *                                                                             *
