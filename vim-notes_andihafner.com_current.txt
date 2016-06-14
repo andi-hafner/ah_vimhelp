@@ -5,19 +5,14 @@
 *                                                                             *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *                                                                             *
-*  The following notes came into life while I'm getting familiar with Vim. As *
-*  this is an individual and ongoing task, they are neither representative    *
-*  nor complete, it's only the stuff that seems to be important for me to re- *
+*  The following notes came into life while I was getting familiar with Vim.  *
+*  As this is an individual and ongoing task, they are neither representative *
+*  nor complete, it's only the stuff that seems to be important to me to re-  *
 *  member respectively to have it handy in need.                              *
 *                                                                             *
 *  The Layout may be is ugly and the topics aren't completely sorted in sec-  *
 *  tions by matter yet. The whole thing is given for your convenience only,   *
-*  so use it as it is if you like. Nevertheless, any corrections, sugges-     *
-*  tions, modifications or extensions are highly appreciated. Please send     *
-*  them to                                                                    *
-*                                                                             *
-*  'andihafner at andihafner dot com'.                                        *
-*                                                                             *
+*  so use it as it is if you like.                                            *
 *                                                                             *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
